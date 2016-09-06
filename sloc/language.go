@@ -26,6 +26,7 @@ var (
 	rubyComments   = Commenter{`#`, "=begin", "=end", false}
 	coffeeComments = Commenter{`#`, "###", "###", false}
 	swiftComments  = Commenter{`//`, `/*`, `*/`, true}
+	yamlComments   = Commenter{`#`, "\000", "\000", false}
 	// TODO support POD and __END__
 	perlComments = Commenter{`#`, "\000", "\000", false}
 )
@@ -198,8 +199,10 @@ var languages = []Language{
 	Language{"XML", mExt(".xml"), xmlComments},
 	Language{"CSS", mExt(".css"), cssComments},
 	Language{"JavaScript", mExt(".js"), cComments},
+	Language{"Qml", mExt(".qml"), cComments},
 	Language{"CoffeeScript", mExt(".coffee"), coffeeComments},
 	Language{"Typescript", mExt(".ts"), cComments},
 	Language{"Swift", mExt(".swift"), swiftComments},
 	Language{"Erlang", mExt(".erl"), erlangComments},
+	Language{"Yaml", mExt(".yml", ".yaml"), yamlComments},
 }

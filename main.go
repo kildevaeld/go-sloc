@@ -9,7 +9,7 @@ import (
 	"sort"
 	"text/tabwriter"
 
-	"github.com/kildevaeld/sloc/sloc"
+	"github.com/kildevaeld/go-sloc/sloc"
 )
 
 type LData []LResult
