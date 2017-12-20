@@ -198,10 +198,11 @@ var languages = []Language{
 	Language{"HTML", mExt(".htm", ".html", ".xhtml"), xmlComments},
 	Language{"XML", mExt(".xml"), xmlComments},
 	Language{"CSS", mExt(".css"), cssComments},
-	Language{"JavaScript", mExt(".js"), cComments},
+	Language{"JavaScript", mExt(".js", ".jsx"), cComments},
 	Language{"Qml", mExt(".qml"), cComments},
 	Language{"CoffeeScript", mExt(".coffee"), coffeeComments},
-	Language{"Typescript", mExt(".ts"), cComments},
+	Language{"Typescript", mExt(".ts", ".tsx"), cComments},
+
 	Language{"Swift", mExt(".swift"), swiftComments},
 	Language{"Erlang", mExt(".erl"), erlangComments},
 	Language{"Yaml", mExt(".yml", ".yaml"), yamlComments},
